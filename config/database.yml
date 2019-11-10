@@ -1,0 +1,23 @@
+
+default: &default
+  database: mydb
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  pool: 5
+  username: postgres
+  password: Nguyenvanloc...
+
+development:
+  <<: *default
+
+ 
+test:
+  <<: *default
+
+
+
+production:
+  <<: *default
+
+  
