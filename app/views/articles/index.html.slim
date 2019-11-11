@@ -1,12 +1,13 @@
 h1 Listing articles
 h2  
+    = link_to 'Home page', root_path
+h2
     = link_to 'New article', new_article_path
 table cellpadding = 5
     tr
         th title
         th text
-
-    = @articles.each do |article|
+    - @articles.each do |article|
         tr
             td = article.title
             td = article.text

@@ -1,4 +1,6 @@
 h1 New Article
+h2  
+    = link_to 'Home page', root_path
 =form_with scope: :article, url: articles_path, local: true do |f|
     - if @article.errors.any?
         #error_explanation
@@ -24,6 +26,6 @@ h1 New Article
 end
 p
 
-= render 'form'
+/ = render 'form'
 =link_to 'Back', articles_path
 
